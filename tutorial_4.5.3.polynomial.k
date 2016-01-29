@@ -1,0 +1,23 @@
+class Polynomial {
+  public Polynomial(double a, double b, double c) {
+    a_ = a; b_ = b; c_ = c
+  }
+  private double four_a_c() {
+    return 4.0 * a_ * c_
+  }
+  private double denominator() {
+    return a_ + a_
+  }
+  private double rootArg() {
+    return b_ ** 2 - this.four_a_c()
+  }
+  public double root() {
+    return (-b_ + Math.sqrt(this.rootArg())) / this.denominator()
+  }
+  private double a_, b_, c_
+}
+
+{
+  Polynomial p = new Polynomial(1, -1, -2)
+  System.out.println(p.root())
+}
