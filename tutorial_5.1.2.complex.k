@@ -27,7 +27,9 @@ class Complex {
       return LOWER
     return EQUAL
   }
-  // public String toString() const { . . . . }
+  public String toString() const {
+    return "(" + realPart_.toString() + ", " + imaginaryPart_.toString() + ")"
+  }
   public double realPart() const { return realPart_ }
   public double imaginaryPart() const { return imaginaryPart_ }
   private double realPart_, imaginaryPart_;
@@ -38,5 +40,6 @@ class Complex {
   Complex c3 = c1 + c2
   System.out.println(c3.realPart())
   System.out.println(c3.imaginaryPart())
-  System.out.println(c1.compareTo(c2))
+  System.out.println(c3.toString())
+  System.out.println(c1 > c2)
 }
