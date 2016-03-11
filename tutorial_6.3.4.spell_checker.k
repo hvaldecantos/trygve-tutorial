@@ -199,8 +199,7 @@ context SpellCheck {
 	}
 	public SpellCheck(String buffer, OnlineDictionary dictionary) {
 		Utilities = this;
-		MutableString mutableBuffer = new MutableString(buffer);
-		Document = mutableBuffer;
+		Document = new MutableString(buffer);
 		Words = Document.words();
 		Dictionary = dictionary
 	}
